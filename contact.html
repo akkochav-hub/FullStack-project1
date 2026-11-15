@@ -24,6 +24,35 @@
   <main>
     <section>
       <h2>צור קשר והזמנת ספר</h2>
+      <form>
+        <label for="name">שם מלא</label>
+        <input type="text" id="name" name="name" required>
+        <label for="gmail">מייל</label>
+        <input type="email" id="gmail" name="gmail" required>
+        <label for="phone">מספר טלפון</label>
+        <input type="tel" id="phone" name="phone">
+        <label for="book">בחרו ספר</label>
+        <select id="book" name="book">
+          <option>The Quiet River - 69 ש"ח</option>
+          <option>Stars Over Jerusalem - 79 ש"ח</option>
+          <option>The Last Lighthouse - 59 ש"ח</option>
+          <option>Code and Coffee - 89 ש"ח</option>
+          <option>Garden of Letters - 49 ש"ח</option>
+          <option>Winter Train - 64 ש"ח</option>
+          <option>Desert Map - 74 ש"ח</option>
+          <option>Small Big Ideas - 54 ש"ח</option>
+        </select>
+        <p>איך תרצו לקבל את הספר?</p>
+        <input type="radio" id="pickup" name="delivery">
+        <label for="pickup">איסוף מהחנות</label>
+        <input type="radio" id="shipping" name="delivery">
+        <label for="shipping">משלוח</label>
+        <label for="notes">הערות</label>
+        <textarea id="notes" name="notes"></textarea>
+        <input type="checkbox" id="news" name="news">
+        <label for="news">אני רוצה לקבל עדכונים</label>
+        <button type="submit">שליחה</button>
+      </form>
     </section>
   </main>
   <footer>
