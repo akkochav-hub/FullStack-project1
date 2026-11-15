@@ -24,6 +24,12 @@ header img {
   height: 50px;
 }
 
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 nav {
   background-color: #1B1F3B;
 }
@@ -49,4 +55,50 @@ h2 {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.book-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book-row .book-card {
+  width: 250px;
+}
+
+.info-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+main a {
+  color: #6B4226;
+}
+
+nav a:hover {
+  color: #FFD35C;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #6B4226;
+  padding: 8px 12px;
+}
+
+th {
+  background-color: #1B1F3B;
+  color: #FFD35C;
 }
