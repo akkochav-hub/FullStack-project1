@@ -1,4 +1,3 @@
-/* הצבעים נבחרו בשביל עיצוב מתאים ללוגו ולבאנר */
 :root {
   --dark-blue: #1B1F3B;
   --accent-gold: #FFD35C;
@@ -8,7 +7,7 @@
 }
 
 * {
-  box-sizing: border-box; /* גורם שריפוד ומסגרת יכללו ברוחב*/
+  box-sizing: border-box;
 }
 
 body {
@@ -19,11 +18,11 @@ body {
 }
 
 img {
-  max-width: 100%; /* לא חורג מהקופסה */
+  max-width: 100%;
 }
 
 h1, h2, h3 {
-  font-family: Georgia, serif; /* עיצוב: גופן ספרותי */
+  font-family: Georgia, serif;
 }
 
 h2 {
@@ -53,7 +52,7 @@ header img {
 
 nav {
   background-color: var(--dark-blue);
-  position: sticky; /* נדבק למעלה בגלילה */
+  position: sticky;
   top: 0;
 }
 
@@ -69,7 +68,7 @@ nav ul {
 nav a {
   color: var(--light-cream);
   text-decoration: none;
-  display: block; /* כל הריבוע לחיץ */
+  display: block;
   padding: 8px 16px;
   border-radius: 6px;
 }
@@ -78,7 +77,6 @@ nav a:hover {
   color: var(--accent-gold);
 }
 
-/* מאיר דף נוכחי */
 nav a.active {
   background-color: var(--accent-gold);
   color: var(--dark-blue);
@@ -87,7 +85,7 @@ nav a.active {
 
 main {
   max-width: 1100px;
-  margin: 0 auto; /* מרכוז */
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -101,18 +99,18 @@ main a {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  transition: transform 0.3s; /* תנועה חלקה */
+  transition: transform 0.3s;
 }
 
 .book-card:hover {
-  transform: translateY(-6px); /* מרים כרטיס */
+  transform: translateY(-6px);
 }
 
 .book-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 עמודות שוות */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
-  justify-items: center; /* כרטיס במרכז התא */
+  justify-items: center;
 }
 
 .book-grid .book-card {
@@ -131,13 +129,13 @@ main a {
 
 .info-layout {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* תוכן פי 2 מהצד */
+  grid-template-columns: 2fr 1fr;
   gap: 30px;
-  align-items: start; /* הצד לא נמתח */
+  align-items: start;
 }
 
 table {
-  border-collapse: collapse; /* קו אחד בין תאים */
+  border-collapse: collapse;
   background-color: white;
 }
 
@@ -160,7 +158,7 @@ form {
 }
 
 form label {
-  display: block; /* תווית מעל השדה */
+  display: block;
   margin-top: 12px;
   font-weight: bold;
 }
@@ -172,7 +170,7 @@ form textarea {
   padding: 8px;
   border: 1px solid var(--secondary-brown);
   border-radius: 6px;
-  font-family: inherit; /* גופן כמו באתר */
+  font-family: inherit;
 }
 
 form input[type="radio"],
@@ -180,7 +178,6 @@ form input[type="checkbox"] {
   width: auto;
 }
 
-/* תווית ליד הכפתור */
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   display: inline;
@@ -195,7 +192,7 @@ button {
   border: none;
   border-radius: 6px;
   font-weight: bold;
-  cursor: pointer; /* יד בריחוף */
+  cursor: pointer;
 }
 
 iframe, embed {
@@ -205,7 +202,7 @@ iframe, embed {
 }
 
 iframe {
-  aspect-ratio: 16 / 9; /* יחס מסך רחב */
+  aspect-ratio: 16 / 9;
 }
 
 embed {
@@ -239,17 +236,17 @@ footer a {
   }
 
   .book-row {
-    flex-direction: column; /* אחד מתחת לשני */
+    flex-direction: column;
     align-items: center;
   }
 
   nav ul {
-    flex-wrap: wrap; /* ירידת שורה */
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   nav li {
-    flex: 1 1 30%; /* 3 בשורה */
+    flex: 1 1 30%;
   }
 
   nav a {
