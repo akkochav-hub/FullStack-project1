@@ -1,0 +1,18 @@
+/* index.html only */
+
+.book-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book-row .book-card {
+  width: 250px;
+}
+
+@media (max-width: 599px) {
+  .book-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

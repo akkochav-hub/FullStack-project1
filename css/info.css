@@ -1,0 +1,29 @@
+/* info.html only */
+
+.info-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid var(--secondary-brown);
+  padding: 8px 12px;
+}
+
+th {
+  background-color: var(--dark-blue);
+  color: var(--accent-gold);
+}
+
+@media (max-width: 599px) {
+  .info-layout {
+    grid-template-columns: 1fr;
+  }
+}

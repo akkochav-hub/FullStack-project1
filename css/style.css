@@ -106,107 +106,11 @@ main a {
   transform: translateY(-6px);
 }
 
-.book-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  justify-items: center;
-}
-
-.book-grid .book-card {
-  max-width: 260px;
-}
-
-.book-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.book-row .book-card {
-  width: 250px;
-}
-
-.info-layout {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 30px;
-  align-items: start;
-}
-
-table {
-  border-collapse: collapse;
-  background-color: white;
-}
-
-th, td {
-  border: 1px solid var(--secondary-brown);
-  padding: 8px 12px;
-}
-
-th {
-  background-color: var(--dark-blue);
-  color: var(--accent-gold);
-}
-
-form {
-  max-width: 600px;
-  background-color: white;
-  border: 2px solid var(--secondary-brown);
-  border-radius: 10px;
-  padding: 20px;
-}
-
-form label {
-  display: block;
-  margin-top: 12px;
-  font-weight: bold;
-}
-
-form input,
-form select,
-form textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid var(--secondary-brown);
-  border-radius: 6px;
-  font-family: inherit;
-}
-
-form input[type="radio"],
-form input[type="checkbox"] {
-  width: auto;
-}
-
-input[type="radio"] + label,
-input[type="checkbox"] + label {
-  display: inline;
-  font-weight: normal;
-}
-
-button {
-  margin-top: 16px;
-  padding: 10px 24px;
-  background-color: var(--accent-gold);
-  color: var(--dark-blue);
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-iframe, embed {
-  width: 100%;
-  border: 2px solid var(--secondary-brown);
-  border-radius: 10px;
-}
-
 iframe {
+  width: 100%;
   aspect-ratio: 16 / 9;
-}
-
-embed {
-  height: 600px;
+  border: 2px solid var(--secondary-brown);
+  border-radius: 10px;
 }
 
 footer {
@@ -220,26 +124,7 @@ footer a {
   color: var(--accent-gold);
 }
 
-@media (max-width: 1023px) {
-  .book-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (max-width: 599px) {
-  .book-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .info-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .book-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
   nav ul {
     flex-wrap: wrap;
     justify-content: center;

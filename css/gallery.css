@@ -1,0 +1,24 @@
+/* gallery.html only */
+
+.book-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+.book-grid .book-card {
+  max-width: 260px;
+}
+
+@media (max-width: 1023px) {
+  .book-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 599px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
