@@ -124,7 +124,44 @@ footer a {
   color: var(--accent-gold);
 }
 
+/* header and footer loaded in iframes (html/header.html, html/footer.html) */
+.frame-body {
+  margin: 0;
+  background-color: var(--dark-blue);
+}
+
+.frame-part {
+  display: block;
+  width: 100%;
+  aspect-ratio: auto;
+  border: none;
+  border-radius: 0;
+}
+
+.frame-header {
+  height: 100px;
+}
+
+.frame-footer {
+  height: 130px;
+}
+
+.to-top {
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+  background-color: var(--dark-blue);
+}
+
+.to-top a {
+  color: var(--accent-gold);
+}
+
 @media (max-width: 599px) {
+  .frame-footer {
+    height: 150px;
+  }
+
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
